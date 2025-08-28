@@ -1,16 +1,6 @@
-// Continuing from Student class above
-class Student {
-    int studentId;
-    String studentName;
+// Valid: Compiler infers from the 'names' variable
+List<String> names = new ArrayList<>();
 
-    // Constructor and equals() method from above...
-
-    // Override hashCode()
-    @Override
-    public int hashCode() {
-        int result = 17; // A prime number
-        result = 31 * result + studentId; // Multiply by another prime, add field hash
-        result = 31 * result + studentName.hashCode(); // Use field's hashCode()
-        return result;
-    }
-}fds
+// Invalid: The compiler has no target type to infer from
+// new ArrayList<>(); 
+// This would result in a compile-time error.
