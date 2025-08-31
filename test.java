@@ -1,6 +1,7 @@
-// Valid: Compiler infers from the 'names' variable
-List<String> names = new ArrayList<>();
+// Inside the SportsCar class's startEngine() method...
 
-// Invalid: The compiler has no target type to infer from
-// new ArrayList<>(); 
-// This would result in a compile-time error.
+// First, do the original Car's work
+super.startEngine(); // This runs the startEngine() from the parent Car class
+
+// Then, do my own specific work
+System.out.println("VROOOM!");
