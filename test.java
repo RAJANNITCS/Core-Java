@@ -1,7 +1,9 @@
-// Inside the SportsCar class's startEngine() method...
+public class MyBaseClass {
+    // some methods
+}
 
-// First, do the original Car's work
-super.startEngine(); // This runs the startEngine() from the parent Car class
-
-// Then, do my own specific work
-System.out.println("VROOOM!");
+// ❌ COMPILE-TIME ERROR!
+// 'enum' cannot extend another class.
+public enum MyEnum extends MyBaseClass {
+    A, B, C;
+}
