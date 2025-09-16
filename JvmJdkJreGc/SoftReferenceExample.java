@@ -19,7 +19,7 @@ public class SoftReferenceExample {
         // To simulate memory pressure, you might try to allocate a lot more memory
         // This is just for demonstration and can lead to OutOfMemoryError
         try {
-            byte[] extremelyLargeArray = new byte[1024 * 1024 * 500]; // 500MB
+            // byte[] extremelyLargeArray = new byte[1024 * 1024 * 500]; // 500MB
         } catch (OutOfMemoryError e) {
             System.out.println("OutOfMemoryError occurred, indicating memory pressure.");
             System.out.println("Soft reference points to after memory pressure: " + softRef.get()); // Might be null now

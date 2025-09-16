@@ -2,7 +2,7 @@ class OuterClass {
     // Non-static instance member
     private int outerInstanceVar = 10;
     // Static member
-    private static int outerStaticVar = 20;
+    static int outerStaticVar = 20;
 
     // Static Nested Class
     static class StaticNestedClass {
@@ -20,6 +20,6 @@ class StaticNestedClassMain {
     public static void main(String[] args) {
         // Instantiate the static nested class directly
         // OuterClass.StaticNestedClass nested = new OuterClass.StaticNestedClass();
-        OuterClass.outerStaticVar;
+        // OuterClass.outerStaticVar;
     }
 }
