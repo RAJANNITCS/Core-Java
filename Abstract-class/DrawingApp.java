@@ -10,9 +10,8 @@ abstract class Shape {
     // A normal (non-abstract) method
     public String getColor() {
         return color;
+        
     }
-
-    
 
     // An abstract method: no body, must be implemented by subclasses
     abstract double calculateArea();
