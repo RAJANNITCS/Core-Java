@@ -12,6 +12,8 @@ abstract class Shape {
         return color;
     }
 
+    
+
     // An abstract method: no body, must be implemented by subclasses
     abstract double calculateArea();
 
